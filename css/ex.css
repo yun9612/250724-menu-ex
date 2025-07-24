@@ -14,6 +14,7 @@ a {
 }
 /* wrap */
 .wrap {
+  text-align: center;
   width: 1200px;
   height: 700px;
   margin: auto;
@@ -82,6 +83,7 @@ a {
   line-height: 300px;
   color: #fff;
 }
+/* 메인 */
 .main {
   width: 100%;
   height: 200px;
@@ -91,16 +93,19 @@ a {
   width: calc(100% / 3);
   background-color: antiquewhite;
   height: 100%;
+  line-height: 200px;
 }
 .banner {
   width: calc(100% / 3);
   background-color: rgb(243, 146, 20);
   height: 100%;
+  line-height: 200px;
 }
 .direction {
   width: calc(100% / 3);
   background-color: rgb(6, 223, 89);
   height: 100%;
+  line-height: 200px;
 }
 .footer {
   width: 100%;
