@@ -12,6 +12,20 @@ a {
   color: #333;
   text-decoration: none;
 }
+header {
+  width: 1200px;
+  position: relative;
+  background-color: aliceblue;
+  margin: auto;
+}
+.submenu-bg {
+  width: 1200px;
+  height: 200px;
+  background-color: aquamarine;
+  position: absolute;
+  top: 100px;
+  display: none;
+}
 nav {
   width: 1000px;
   background-color: aliceblue;
@@ -39,19 +53,17 @@ nav {
   color: #333;
   background-color: rgb(238, 238, 238);
 }
+.depth2 {
+  position: relative;
+  display: none;
+  z-index: 1;
+}
 .depth2 > li > a {
   line-height: 40px;
   display: block;
   background-color: antiquewhite;
 }
-.depth2 {
-  /* display: none; */
-  opacity: 0;
-  max-height: 0;
-  overflow: hidden;
-  transform: translateY(-10px);
-  transition: all 0.3s ease;
-}
+
 /* 서브메뉴 전체 나오기 */
 /* .gnb:hover .depth2 {
   display: block;
@@ -64,9 +76,10 @@ nav {
   background-color: rgb(241, 213, 177);
 }
 /* 자식 서브메뉴만 나오기 */
-.gnb > li:hover .depth2 {
-  /* display: block; */
-  opacity: 1;
-  max-height: 500px;
-  transform: translateY(0);
+/* .gnb > li:hover .depth2 {
+  display: block;
+} */
+.gnb:hover + .submenu-bg,
+.gnb:hover .depth2 {
+  display: block;
 }
